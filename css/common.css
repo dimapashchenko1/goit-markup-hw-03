@@ -1,0 +1,195 @@
+/* Главный шрифт документа */
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+a {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* активная ссылка  */
+a.current, .nav-link:active {
+    color: var(--blue-text);
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a,
+p {
+    display: inline-block;
+}
+
+/* Container */
+.container {
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+/* outline: 2px solid tomato; */
+}
+
+/* header */
+.header {
+    background-color: var(--white-text);
+    box-sizing: content-box;
+    border-bottom: 1px solid;
+    border-color: var(--grey-border);
+    max-height: 80px;
+}
+
+.nav,
+.nav-links,
+.nav-contact {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.nav-links {
+    box-sizing: content-box;
+    width: 294px;
+    height: 16px;
+    margin-left: 93px;
+}
+
+
+.nav-contact {
+    box-sizing: content-box;
+    margin-left: 331px;
+}
+a[href="mailto:info@devstudio.com"] {
+    margin-right: 50px;
+}
+
+
+
+.nav-links .nav-link {
+    margin-right: 50px;
+  }
+
+
+
+
+
+/* Стиль лого сайта */
+.nav-logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--black-text-logo);
+}
+
+.nav-logo .colortext {
+    color: var(--blue-text)
+}
+/* Стили шапки */
+.nav-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--black-text);
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--blue-text);
+}
+
+.nav-contact .nav-link {
+    color: var(--grey-text);
+}
+
+
+.nav-contact .nav-link:hover, .nav-contact .nav-link:focus {
+    color: var(--blue-text);
+}
+
+
+/* Стили Футера */
+.footer {
+    background-color: var(--black-background);
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.address-logo {
+    padding-top: 60px;
+}
+.address-logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--white-text);
+}
+
+.colortext {
+    color: var(--blue-text)
+}
+
+.address-text {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.contacts {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.address-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white-text);
+}
+
+
+.address-contact {
+    margin-top: 9px;
+    margin-bottom: 0px;
+}
+
+.telephone {
+    margin-bottom: 56px;
+
+}
+
+.address-contact {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white-text-op60);
+}
+
