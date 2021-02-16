@@ -7,7 +7,7 @@ main {
 .menu-filter {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
+    padding-top: 0px;
     padding-bottom: 0px;
 
 }
@@ -36,22 +36,35 @@ main {
 }
 
 /* ==Постери== */
-.poster {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 50px;
+.menu{
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
+.menu-filter {
+    margin-bottom: 50px;
+}
+
+.poster {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--list-gap));
+    margin-top: calc(-1 * var(--list-gap));
+    
+}
+
 .poster-list {
-    box-sizing: content-box;
+    flex-basis: calc(100% / 4 - var(--list-gap));
+    margin-left: var(--list-gap);
+    margin-top: var(--list-gap);
     max-width: 370px;
     max-height: 404px;
     border: 1px solid;
     border-color: var(--grey-border);
-    margin-bottom: 30px;
 }
+
 
 .poster-name {
     margin-top: 20px;

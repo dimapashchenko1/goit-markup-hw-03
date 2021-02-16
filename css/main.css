@@ -79,20 +79,31 @@ justify-content: center;
   }
   
   /* ===FEATURES=== */
-
-
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+ 
+}
 
 .list-features {
+    padding: 0;
+    margin: 0;
     display: flex;
-    box-sizing: content-box;
-    justify-content: space-between;
-    
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--list-gap));
+    margin-top: calc(-1 * var(--list-gap));
+}
+
+.features-card {
+    flex-basis: calc(100% / 4 - var(--list-gap));
+    margin-left: var(--list-gap);
+    margin-top: var(--list-gap);
 }
 
 
 .features-title {
-    margin-top: 94px;
-    margin-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -103,9 +114,11 @@ justify-content: center;
     color: var(--black-text);
 }
 
+.features-text {
+    margin-top: 10px;;
+}
 .features-pre {
-    margin-top: 10px;
-    margin-bottom: 94px;
+   
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -114,27 +127,12 @@ justify-content: center;
     letter-spacing: 0.03em;
     color: var(--grey-text);
 } 
-.list-features p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.features-text {
-   
-    margin-top: 10px;
-    margin-bottom: 10px;
 
-}
-.features-text p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    display: flex;
-}
-.features-pre p {
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+
 /* ===ЧЕМ ЗАНИМАЕМСЯ=== */
+.passion {
+    padding-bottom: 94px;
+}
 
 .passion-title {
     display: flex;
@@ -144,11 +142,20 @@ justify-content: center;
 }
 
 
-
-.passion-photo {
+.passion-list {
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: space-between;
-    
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--list-gap));
+    margin-top: calc(-1 * var(--list-gap));
+}
+
+.passion-item {
+    flex-basis: calc(100% / 3 - var(--list-gap));
+    margin-left: var(--list-gap);
+    margin-top: var(--list-gap);
+
 }
 
 /* ===Команда=== */
@@ -158,7 +165,7 @@ justify-content: center;
 
 .passion-title,
 .team-title {
-    margin-top: 0px;
+  
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -171,14 +178,25 @@ justify-content: center;
 .team-title {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 
-.worker-list {
+
+.team-list {
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 94px;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--list-gap));
+    margin-top: calc(-1 * var(--list-gap));
+}
+
+.worker-card {
+    width: 270px;
+    flex-basis: calc(100% / 4 - var(--list-gap));
+    margin-left: var(--list-gap);
+    margin-top: var(--list-gap);
+
 }
 
 .worker-card {
@@ -221,3 +239,7 @@ justify-content: center;
     letter-spacing: 0.03em;
     color: var(--grey-text);
 }
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }

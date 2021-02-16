@@ -1,21 +1,15 @@
 /* Главный шрифт документа */
 body {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
+   
 }
-
-
 a {
-    display: inline-block;
     text-decoration: none;
   }
 
-
 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
-
 
 /* активная ссылка  */
 a.current, .nav-link:active {
@@ -27,21 +21,29 @@ a.current, .nav-link:active {
     box-sizing: border-box;
 }
 a,
-p {
+p,
+ul,
+li {
     display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+pre {
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Container */
 .container {
-width: 1200px;
-padding-left: 15px;
-padding-right: 15px;
-margin-left: auto;
-margin-right: auto;
-/* outline: 2px solid tomato; */
-}
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
-/* header */
+    
+/* ===HEADER=== */
 .header {
     background-color: var(--white-text);
     box-sizing: content-box;
@@ -54,45 +56,28 @@ margin-right: auto;
 .nav-links,
 .nav-contact {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
+    
 }
-
-.nav-links {
-    box-sizing: content-box;
-    width: 294px;
-    height: 16px;
-    margin-left: 93px;
-}
-
-
-.nav-contact {
-    box-sizing: content-box;
-    margin-left: 331px;
-}
-a[href="mailto:info@devstudio.com"] {
-    margin-right: 50px;
+.nav {
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 
 
-.nav-links .nav-link {
-    margin-right: 50px;
-  }
 
 
 
 
 
-/* Стиль лого сайта */
 .nav-logo {
-    margin-top: 24px;
-    margin-bottom: 25px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--black-text-logo);
 }
@@ -101,15 +86,38 @@ a[href="mailto:info@devstudio.com"] {
     color: var(--blue-text)
 }
 /* Стили шапки */
+
+.nav-links {
+    box-sizing: content-box;
+    max-width: 294px;
+    max-height: 16px;
+    margin-left: 93px;
+    }
+
+.nav-links .nav-link {
+    margin-right: 50px;
+}
+
 .nav-link {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--black-text);
 }
+
+.nav-contact {
+    box-sizing: content-box;
+    margin-left: 331px;
+}
+
+a[href="mailto:info@devstudio.com"] {
+    margin-right: 50px;
+}
+
+
 
 .nav-link:hover, .nav-link:focus {
     color: var(--blue-text);
@@ -144,7 +152,7 @@ a[href="mailto:info@devstudio.com"] {
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 31px;
     letter-spacing: 0.03em;
     color: var(--white-text);
 }
@@ -171,7 +179,15 @@ a[href="mailto:info@devstudio.com"] {
     letter-spacing: 0.03em;
     color: var(--white-text);
 }
-
+.address-contact {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white-text-op60);
+}
 
 .address-contact {
     margin-top: 9px;
@@ -181,15 +197,5 @@ a[href="mailto:info@devstudio.com"] {
 .telephone {
     margin-bottom: 56px;
 
-}
-
-.address-contact {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--white-text-op60);
 }
 
